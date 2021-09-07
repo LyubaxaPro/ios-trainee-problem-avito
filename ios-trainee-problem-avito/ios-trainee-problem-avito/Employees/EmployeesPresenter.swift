@@ -11,7 +11,7 @@ import Foundation
 final class EmployeesPresenter {
 	weak var view: EmployeesViewInput?
     weak var moduleOutput: EmployeesModuleOutput?
-    private (set) var companyData: CompanyModel?
+    var companyData: CompanyModel?
 
 	private let router: EmployeesRouterInput
 	private let interactor: EmployeesInteractorInput
@@ -42,6 +42,10 @@ extension EmployeesPresenter: EmployeesViewOutput {
 extension EmployeesPresenter: EmployeesInteractorOutput {
     func didLoad(data: CompanyModel) {
         companyData = data
+        companyData?.company.employees.sort {(lhs: Employee, rhs: Employee) -> Bool in
+            return lhs.name < rhs.name
+        }
+                                    
         self.view?.reloadData()
     }
     

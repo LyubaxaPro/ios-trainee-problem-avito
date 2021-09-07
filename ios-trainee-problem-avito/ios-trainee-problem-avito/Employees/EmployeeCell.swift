@@ -28,9 +28,18 @@ final class EmployeeCell: UITableViewCell {
     }
     
     private func setup() {
-        name.font = .systemFont(ofSize: 15, weight: .thin)
-        phoneNumber.font = .systemFont(ofSize: 15, weight: .thin)
-        skills.font = .systemFont(ofSize: 15, weight: .thin)
+        name.textColor = .black
+        phoneNumber.textColor = .black
+        skills.textColor = .black
+        nameLabel.textColor = UIColor(red: 0, green: 0, blue: 204, alpha: 1)
+        phoneNumberLabel.textColor = UIColor(red: 0, green: 0, blue: 204, alpha: 1)
+        skillsLabel.textColor = UIColor(red: 0, green: 0, blue: 204, alpha: 1)
+        name.font = .systemFont(ofSize: 15, weight: .regular)
+        nameLabel.font = .systemFont(ofSize: 15, weight: .medium)
+        phoneNumber.font = .systemFont(ofSize: 15, weight: .regular)
+        phoneNumberLabel.font = .systemFont(ofSize: 15, weight: .medium)
+        skills.font = .systemFont(ofSize: 15, weight: .regular)
+        skillsLabel.font = .systemFont(ofSize: 15, weight: .medium)
         container.layer.cornerRadius = 10
         
         container.clipsToBounds = true
@@ -53,6 +62,11 @@ final class EmployeeCell: UITableViewCell {
             .top(8)
             .bottom(8)
         
+        nameLabel.pin
+            .left(5)
+            .top(10)
+            .sizeToFit()
+        
         name.pin
             .hCenter()
             .top(10)
@@ -64,21 +78,35 @@ final class EmployeeCell: UITableViewCell {
             .hCenter()
             .sizeToFit()
         
+        phoneNumberLabel.pin
+            .left(5)
+            .below(of: nameLabel)
+            .marginTop(10)
+            .sizeToFit()
+        
         skills.pin
             .below(of: phoneNumber)
             .marginTop(10)
             .hCenter()
             .sizeToFit()
+        
+        skillsLabel.pin
+            .left(5)
+            .below(of: phoneNumberLabel)
+            .marginTop(10)
+            .sizeToFit()
     }
     
     func configure(with model: Employee) {
         name.text = model.name
+        nameLabel.text = "Name"
         phoneNumber.text = model.phone_number
-        
+        phoneNumberLabel.text = "Phone number"
         var skillsText = ""
         model.skills.forEach {
             skillsText += $0 + " "
         }
         skills.text = skillsText
+        skillsLabel.text = "Skills"
     }
 }

@@ -39,7 +39,11 @@ final class EmployeesViewController: UIViewController {
 	}
     
     override func viewDidLayoutSubviews() {
-        tableView.pin.all()
+        tableView.pin
+            .top(view.pin.safeArea.top)
+            .right(view.pin.safeArea.right)
+            .left(view.pin.safeArea.left)
+            .bottom(view.pin.safeArea.bottom)
     }
 }
 
@@ -61,13 +65,14 @@ extension EmployeesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 110
     }
     
 }
 extension EmployeesViewController: EmployeesViewInput {
     func reloadData() {
         tableView.reloadData()
+        title = output.getName()
     }
     
 }

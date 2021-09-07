@@ -17,9 +17,9 @@ struct CompanyModel: Codable {
     
     struct Company: Codable {
         let name: String
-        let employees: [Employee]
+        var employees: [Employee]
     }
     
-    let company: Company
+    var company: Company
 }
 

@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Avito_trainee
 //
-//  Created by LyubaxaPro on 07.09.2021.
+//  Created by LyubaxaPro on 06.09.2021.
 //
 
 import UIKit
