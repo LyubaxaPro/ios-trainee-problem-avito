@@ -1,0 +1,6 @@
+framework module Pods_ios_trainee_problem_avitoTests {
+  umbrella header "Pods-ios-trainee-problem-avitoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
