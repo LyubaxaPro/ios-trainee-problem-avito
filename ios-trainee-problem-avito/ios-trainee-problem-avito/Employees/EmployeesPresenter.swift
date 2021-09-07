@@ -50,6 +50,6 @@ extension EmployeesPresenter: EmployeesInteractorOutput {
     }
     
     func didReceive(error: Error) {
-        print(error.localizedDescription)
+        router.showAlert(error: error)
     }
 }

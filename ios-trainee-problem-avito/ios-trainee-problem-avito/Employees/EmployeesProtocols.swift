@@ -35,6 +35,7 @@ protocol EmployeesInteractorOutput: AnyObject {
 }
 
 protocol EmployeesRouterInput: AnyObject {
+    func showAlert(error: Error)
 }
 
 protocol EmployeesManagerDescription: AnyObject {
