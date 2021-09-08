@@ -13,9 +13,8 @@ final class EmployeesRouter {
 }
 
 extension EmployeesRouter: EmployeesRouterInput {
-    func showAlert(error: Error) {
-        debugPrint(error)
-        let alert = UIAlertController(title: "Error", message: "Unexpected error", preferredStyle: .alert)
+    func showAlert(with message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
             alert.dismiss(animated: true, completion: nil)
         })

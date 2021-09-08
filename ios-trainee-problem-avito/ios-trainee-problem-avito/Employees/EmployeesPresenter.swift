@@ -54,6 +54,20 @@ extension EmployeesPresenter: EmployeesInteractorOutput {
     }
     
     func didReceive(error: Error) {
-        router.showAlert(error: error)
+        var message: String
+        switch error{
+        case Errors.urlError:
+             message = "API is not available"
+        case Errors.dataTaskError:
+            message = "Network error"
+        case Errors.dataError:
+            message = "Data is empty"
+        case Errors.decoderError:
+            message = "Wrong data format"
+        default:
+            message = "Unexpected error"
+        }
+        
+        router.showAlert(with: message)
     }
 }

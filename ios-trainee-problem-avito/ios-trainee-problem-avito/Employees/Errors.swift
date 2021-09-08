@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum Errors: String, Error {
-    case urlError = "Wrong url"
-    case dataTaskError = "dataTaskError"
-    case dataError = "Data is empty"
-    case decoderError = "Decoder error"
+enum Errors: Error {
+    case urlError
+    case dataTaskError
+    case dataError
+    case decoderError
 }

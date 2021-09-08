@@ -9,11 +9,8 @@
 /* Begin PBXBuildFile section */
 		0476E63D26E764AC00304FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E63C26E764AC00304FEC /* AppDelegate.swift */; };
 		0476E63F26E764AC00304FEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E63E26E764AC00304FEC /* SceneDelegate.swift */; };
-		0476E64126E764AC00304FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E64026E764AC00304FEC /* ViewController.swift */; };
 		0476E64626E764AE00304FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0476E64526E764AE00304FEC /* Assets.xcassets */; };
 		0476E64926E764AE00304FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0476E64726E764AE00304FEC /* LaunchScreen.storyboard */; };
-		0476E65426E764AE00304FEC /* ios_trainee_problem_avitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E65326E764AE00304FEC /* ios_trainee_problem_avitoTests.swift */; };
-		0476E65F26E764AE00304FEC /* ios_trainee_problem_avitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E65E26E764AE00304FEC /* ios_trainee_problem_avitoUITests.swift */; };
 		0476E67726E765B800304FEC /* EmployeesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E66D26E765B700304FEC /* EmployeesManager.swift */; };
 		0476E67826E765B800304FEC /* EmployeesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E66E26E765B700304FEC /* EmployeesPresenter.swift */; };
 		0476E67926E765B800304FEC /* EmployeesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E66F26E765B700304FEC /* EmployeesProtocols.swift */; };
@@ -50,16 +47,11 @@
 		0476E63926E764AC00304FEC /* ios-trainee-problem-avito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-trainee-problem-avito.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0476E63C26E764AC00304FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0476E63E26E764AC00304FEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0476E64026E764AC00304FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0476E64526E764AE00304FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0476E64826E764AE00304FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0476E64A26E764AE00304FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0476E64F26E764AE00304FEC /* ios-trainee-problem-avitoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-trainee-problem-avitoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0476E65326E764AE00304FEC /* ios_trainee_problem_avitoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_trainee_problem_avitoTests.swift; sourceTree = "<group>"; };
-		0476E65526E764AE00304FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0476E65A26E764AE00304FEC /* ios-trainee-problem-avitoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-trainee-problem-avitoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0476E65E26E764AE00304FEC /* ios_trainee_problem_avitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_trainee_problem_avitoUITests.swift; sourceTree = "<group>"; };
-		0476E66026E764AE00304FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0476E66D26E765B700304FEC /* EmployeesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesManager.swift; sourceTree = "<group>"; };
 		0476E66E26E765B700304FEC /* EmployeesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesPresenter.swift; sourceTree = "<group>"; };
 		0476E66F26E765B700304FEC /* EmployeesProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesProtocols.swift; sourceTree = "<group>"; };
@@ -113,8 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				0476E63B26E764AC00304FEC /* ios-trainee-problem-avito */,
-				0476E65226E764AE00304FEC /* ios-trainee-problem-avitoTests */,
-				0476E65D26E764AE00304FEC /* ios-trainee-problem-avitoUITests */,
 				0476E63A26E764AC00304FEC /* Products */,
 				E833D32C34994F34EDAA0FC9 /* Pods */,
 				ECA839791A3183DB188CF994 /* Frameworks */,
@@ -137,30 +127,11 @@
 				0476E66C26E7658600304FEC /* Employees */,
 				0476E63C26E764AC00304FEC /* AppDelegate.swift */,
 				0476E63E26E764AC00304FEC /* SceneDelegate.swift */,
-				0476E64026E764AC00304FEC /* ViewController.swift */,
 				0476E64526E764AE00304FEC /* Assets.xcassets */,
 				0476E64726E764AE00304FEC /* LaunchScreen.storyboard */,
 				0476E64A26E764AE00304FEC /* Info.plist */,
 			);
 			path = "ios-trainee-problem-avito";
-			sourceTree = "<group>";
-		};
-		0476E65226E764AE00304FEC /* ios-trainee-problem-avitoTests */ = {
-			isa = PBXGroup;
-			children = (
-				0476E65326E764AE00304FEC /* ios_trainee_problem_avitoTests.swift */,
-				0476E65526E764AE00304FEC /* Info.plist */,
-			);
-			path = "ios-trainee-problem-avitoTests";
-			sourceTree = "<group>";
-		};
-		0476E65D26E764AE00304FEC /* ios-trainee-problem-avitoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0476E65E26E764AE00304FEC /* ios_trainee_problem_avitoUITests.swift */,
-				0476E66026E764AE00304FEC /* Info.plist */,
-			);
-			path = "ios-trainee-problem-avitoUITests";
 			sourceTree = "<group>";
 		};
 		0476E66C26E7658600304FEC /* Employees */ = {
@@ -440,7 +411,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0476E64126E764AC00304FEC /* ViewController.swift in Sources */,
 				0476E63D26E764AC00304FEC /* AppDelegate.swift in Sources */,
 				0476E67F26E765B800304FEC /* EmployeesViewController.swift in Sources */,
 				0476E67A26E765B800304FEC /* EmployeesContainer.swift in Sources */,
@@ -460,7 +430,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0476E65426E764AE00304FEC /* ios_trainee_problem_avitoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +437,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0476E65F26E764AE00304FEC /* ios_trainee_problem_avitoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
