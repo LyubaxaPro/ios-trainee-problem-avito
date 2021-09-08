@@ -23,6 +23,7 @@ protocol EmployeesViewOutput: AnyObject {
     func viewDidLoad()
     func getName() -> String
     func getEmployees() -> [Employee]
+    func didPullRefresh()
 }
 
 protocol EmployeesInteractorInput: AnyObject {
@@ -40,4 +41,5 @@ protocol EmployeesRouterInput: AnyObject {
 
 protocol EmployeesManagerDescription: AnyObject {
     func loadData(complition: @escaping (Result<CompanyModel, Error>) -> Void)
+    func getData(complition: @escaping (Result<CompanyModel, Error>) -> Void)
 }

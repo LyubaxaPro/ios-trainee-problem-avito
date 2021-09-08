@@ -33,6 +33,10 @@ final class EmployeesViewController: UIViewController {
         tableView.dataSource = self
         tableView.separatorStyle = .none
         
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(didPullRefresh), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+        
         view.addSubview(tableView)
         
         output.viewDidLoad()
@@ -44,6 +48,11 @@ final class EmployeesViewController: UIViewController {
             .right(view.pin.safeArea.right)
             .left(view.pin.safeArea.left)
             .bottom(view.pin.safeArea.bottom)
+    }
+    
+    @objc
+    private func didPullRefresh() {
+        output.didPullRefresh()
     }
 }
 
@@ -67,12 +76,12 @@ extension EmployeesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 110
     }
-    
 }
+
 extension EmployeesViewController: EmployeesViewInput {
     func reloadData() {
+        self.tableView.refreshControl?.endRefreshing()
         tableView.reloadData()
         title = output.getName()
     }
-    
 }

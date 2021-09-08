@@ -15,7 +15,7 @@ final class EmployeesInteractor {
 
 extension EmployeesInteractor: EmployeesInteractorInput {
     func load() {
-        manager.loadData() { [weak self] result in
+        manager.getData() { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let data):

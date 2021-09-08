@@ -37,6 +37,10 @@ extension EmployeesPresenter: EmployeesViewOutput {
     func viewDidLoad() {
         interactor.load()
     }
+    
+    func didPullRefresh() {
+        interactor.load()
+    }
 }
 
 extension EmployeesPresenter: EmployeesInteractorOutput {
