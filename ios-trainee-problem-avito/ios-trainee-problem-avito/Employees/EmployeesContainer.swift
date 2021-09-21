@@ -11,7 +11,6 @@ import UIKit
 final class EmployeesContainer {
     let input: EmployeesModuleInput
 	let viewController: UIViewController
-	private(set) weak var router: EmployeesRouterInput!
 
 	class func assemble(with context: EmployeesContext) -> EmployeesContainer {
         let router = EmployeesRouter()
@@ -25,13 +24,12 @@ final class EmployeesContainer {
 		interactor.output = presenter
         router.sourceViewController = viewController
 
-        return EmployeesContainer(view: viewController, input: presenter, router: router)
+        return EmployeesContainer(view: viewController, input: presenter)
 	}
 
-    private init(view: UIViewController, input: EmployeesModuleInput, router: EmployeesRouterInput) {
+    private init(view: UIViewController, input: EmployeesModuleInput) {
 		self.viewController = view
         self.input = input
-		self.router = router
 	}
 }
 
